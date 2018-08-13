@@ -4,7 +4,7 @@
   "description": "Boilerplate for react and webpack4 using, CSS-Modules, react hot loader, webpack-serve",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-serve --open",
+    "start": "cross-env NODE_ENV=development webpack-serve",
     "build": "cross-env NODE_ENV=production webpack",
     "format": "prettier --write 'packages/**/*.js'",
     "test": "jest --watchAll --coverage",
@@ -26,6 +26,7 @@
     "npm": ">=3"
   },
   "dependencies": {
+    "@material-ui/core": "^1.4.3",
     "lodash": "4.17.10",
     "prop-types": "15.6.2",
     "react": "16.4.2",
