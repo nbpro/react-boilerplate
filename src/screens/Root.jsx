@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { hot } from "react-hot-loader";
 
 import CssBaseline from "@material-ui/core/CssBaseline";
-import HeaderContainer from "../components/header-component/HeaderContainer";
+import HeaderContainer from "../components/Header/HeaderContainer";
 
 class App extends Component {
   constructor(props) {
