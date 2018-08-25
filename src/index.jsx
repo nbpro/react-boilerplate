@@ -4,5 +4,3 @@ import App from './screens/Root.jsx';
 import './assests/style.css';
 
 ReactDOM.render(<App />, document.getElementById('app-root'));
-
-module.hot.accept();

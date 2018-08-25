@@ -1,17 +1,17 @@
-.ct-grid {
+.app-grid {
   stroke: rgba(255, 255, 255, 0.2);
   stroke-width: 1px;
   stroke-dasharray: 2px;
 }
 
-.ct-series-a .ct-point,
-.ct-series-a .ct-line,
-.ct-series-a .ct-bar,
-.ct-series-a .ct-slice-donut {
+.app-series-a .app-point,
+.app-series-a .app-line,
+.app-series-a .app-bar,
+.app-series-a .app-slice-donut {
   stroke: rgba(255, 255, 255, 0.8);
 }
 
-.ct-label.ct-horizontal.ct-end {
+.app-label.app-horizontal.app-end {
   -webkit-box-align: flex-start;
   -webkit-align-items: flex-start;
   -ms-flex-align: flex-start;
@@ -24,12 +24,12 @@
   text-anchor: start;
 }
 
-.ct-label {
+.app-label {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.ct-chart-line .ct-label,
-.ct-chart-bar .ct-label {
+.app-chart-line .app-label,
+.app-chart-bar .app-label {
   display: block;
   display: -webkit-box;
   display: -moz-box;
@@ -38,7 +38,7 @@
   display: flex;
 }
 
-.ct-label {
+.app-label {
   fill: rgba(0, 0, 0, 0.4);
   line-height: 1;
 }

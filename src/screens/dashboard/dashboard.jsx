@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react';
-// import PropTypes from "prop-types";
-// import withStyles from "@material-ui/core/styles/withStyles";
+import PropTypes from 'prop-types';
+import withStyles from '@material-ui/core/styles/withStyles';
 import HeaderContainer from '../../components/Header/HeaderContainer';
 // core components
 
@@ -18,9 +18,10 @@ class DashBoardComponent extends React.Component {
   }
   componentWillUnmount() {}
   render() {
+    const appTitle = `React Boiler Plate`;
     return (
       <div>
-        <HeaderContainer title="React Boiler Plate" />
+        <HeaderContainer title={appTitle} />
       </div>
     );
   }

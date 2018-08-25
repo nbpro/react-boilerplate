@@ -6,35 +6,19 @@ import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/core/styles/withStyles';
 import headerStyle from '../../assests/components/HeaderStyles';
 
-const styles = {
-  appBar: {
-    position: 'fixed',
-    zIndex: 2,
-    zDepth: 2,
-    top: 0,
-    height: 64
-  },
-  appBarMenu_docked: {
-    marginRight: '256px'
-  },
-  appBarMenu_undocked: {
-    marginRight: '0px'
-  }
-};
-
 class HeaderContainer extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
-    const { title } = this.props;
+    const { title, classes } = this.props;
     return (
       <header>
-        <AppBar title={title || 'my application'} style={styles.appBar}>
+        <AppBar title={title || ''} className={classes.appBar}>
           <Toolbar>
             <Typography variant="title" color="inherit">
-              Title
+              {title}
             </Typography>
           </Toolbar>
         </AppBar>
