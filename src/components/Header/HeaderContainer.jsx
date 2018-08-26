@@ -18,7 +18,7 @@ class HeaderContainer extends React.Component {
         <AppBar title={title || ''} className={classes.appBar}>
           <Toolbar>
             <Typography variant="title" color="inherit">
-              {title}
+              <span className={classes.title}>{title}</span>
             </Typography>
           </Toolbar>
         </AppBar>

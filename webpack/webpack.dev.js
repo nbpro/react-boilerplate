@@ -5,7 +5,13 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: commonPaths.outputPath,
-    chunkFilename: '[name].js',
+    chunkFilename: '[name].js'
+  },
+  devtool: 'eval-source-map',
+  devServer: {
+    inline: true,
+    contentBase: 'src',
+    port: '8080'
   },
   module: {
     rules: [
@@ -18,12 +24,12 @@ module.exports = {
             options: {
               sourceMap: true,
               modules: true,
-              localIdentName: '[local]___[hash:base64:5]',
-            },
+              localIdentName: '[local]___[hash:base64:5]'
+            }
           },
-          'sass-loader',
-        ],
-      },
-    ],
-  },
+          'sass-loader'
+        ]
+      }
+    ]
+  }
 };
