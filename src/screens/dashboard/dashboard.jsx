@@ -18,7 +18,7 @@ class DashBoardComponent extends React.Component {
   }
   componentWillUnmount() {}
   render() {
-    const appTitle = `React Boiler Plate`;
+    const appTitle = `Application Name`;
     return (
       <div>
         <HeaderContainer title={appTitle} />

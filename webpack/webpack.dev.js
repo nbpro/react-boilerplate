@@ -11,7 +11,11 @@ module.exports = {
   devServer: {
     inline: true,
     contentBase: 'src',
-    port: '8080'
+    port: '8080',
+    historyApiFallback: true
+  },
+  watchOptions: {
+    poll: true
   },
   module: {
     rules: [
